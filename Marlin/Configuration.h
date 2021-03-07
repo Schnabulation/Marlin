@@ -994,7 +994,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -45, -7, -2.70 }
+#define NOZZLE_TO_PROBE_OFFSET { -45, -7, -2.75 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -2291,6 +2291,13 @@
 // Ender-3 v2 OEM display. A DWIN display with Rotary Encoder.
 //
 #define CREALITY_DWIN_EXTUI
+#if ENABLED(CREALITY_DWIN_EXTUI)
+  //
+  // Enable custom icons
+  // NB: Requires Ender-3 v2 OEM display firmware update, or you will get blank icons!
+  //
+  //#define CREALITY_DWIN_EXTUI_CUSTOM_ICONS
+#endif
 
 //
 // Touch-screen LCD for Malyan M200/M300 printers
