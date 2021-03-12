@@ -87,7 +87,7 @@
 
 #define MACHINE_SIZE STRINGIFY(X_BED_SIZE) "x" STRINGIFY(Y_BED_SIZE) "x" STRINGIFY(Z_MAX_POS)
 
-#define CORP_WEBSITE_E "github.com/Jyers"
+#define CORP_WEBSITE_E "github.com/Schnabulation"
 
 #define BUILD_NUMBER "1.2.1"
 
@@ -570,7 +570,7 @@ void CrealityDWINClass::Draw_Print_Screen() {
     Draw_Print_Filename(true);
   }
   else {
-    char * const name = (char*)"Host Print";
+    char * const name = (char*)"Printing from OctoPrint";
     const int8_t npos = _MAX(0U, DWIN_WIDTH - strlen(name) * MENU_CHR_W) / 2;
     DWIN_Draw_String(false, false, DWIN_FONT_MENU, Color_White, Color_Bg_Black, npos, 60, name);
   }
