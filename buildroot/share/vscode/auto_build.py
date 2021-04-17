@@ -72,7 +72,8 @@
 from __future__ import print_function
 from __future__ import division
 
-import sys,os
+import sys
+import os
 
 pwd = os.getcwd()  # make sure we're executing from the correct directory level
 pwd = pwd.replace('\\', '/')
