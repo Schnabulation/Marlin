@@ -1044,7 +1044,7 @@ void CrealityDWINClass::Menu_Item_Handler(uint8_t menu, uint8_t item, bool draw/
             else {
               #if HAS_LEVELING
                 level_state = planner.leveling_active;
-                set_bed_leveling_enabled(false);
+                //set_bed_leveling_enabled(false);   Steve: keeping mesh bed leveling on during usage of Z-offset tool
               #endif
               Draw_Menu(ZOffset);
             }
